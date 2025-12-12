@@ -1,7 +1,7 @@
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url("/public/images/crowded-scene-indian-city.jpg") center/cover no-repeat;
+              url("/public/images/indian.webp") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,4 +32,9 @@
 }
 .hero-btn:hover {
   background: #b7942d;
+}
+@media (max-width:786px) {
+  .hero-content h1{
+    font-size: 18px;
+  }
 }

@@ -1,6 +1,6 @@
 .booking {
 background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url("/public/images/valletta-waterfront-malta.jpg") center/cover no-repeat;  padding: 100px 40px;
+              url("/public/images/watery.webp") center/cover no-repeat;  padding: 100px 40px;
   display: flex;
   justify-content: center;
 }
