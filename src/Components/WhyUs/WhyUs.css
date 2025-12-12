@@ -1,0 +1,33 @@
+/* WhyUs.css */
+
+.whyus {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.whyus h2 {
+  font-size: 34px;
+  color: #5B3A82;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  width: 280px;
+  padding: 25px;
+  background: #F4F2F7;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.why-card h3 {
+  color: #D4AF37;
+  margin-bottom: 10px;
+}

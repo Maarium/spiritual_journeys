@@ -1,0 +1,117 @@
+/* ===================== NAVBAR ===================== */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: transparent; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;         
+  top: 0;
+  left: 0;
+  z-index: 9999;            
+  box-sizing: border-box;
+  transition: background 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: #5B3A82; 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  transition: color 0.4s;
+}
+
+.logo span {
+  color: #D4AF37;
+}
+
+/* ===================== MENU LINKS ===================== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-links li:hover {
+  transform: translateY(-2px);
+}
+
+/* Menu links */
+.nav-links li a {
+  text-decoration: none;
+  color: white;       /* default white */
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Active menu item */
+.nav-links li.active a {
+  color: #D4AF37;     /* gold */
+  font-weight: 600;
+}
+
+/* Visited menu items */
+.nav-links li a:visited {
+  color: #ffffff;     /* grey */
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #FFD700;     /* bright gold */
+}
+
+/* ===================== MOBILE MENU ===================== */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.4s;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 240px;
+    height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    transition: right 0.4s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+/* Remove extra body padding for overlay */
+body {
+  padding-top: 0;
+}

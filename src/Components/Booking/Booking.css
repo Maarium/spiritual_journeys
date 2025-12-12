@@ -1,0 +1,39 @@
+.booking {
+background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url("/public/images/valletta-waterfront-malta.jpg") center/cover no-repeat;  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+}
+.booking-box {
+  background: white;
+  padding: 40px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.booking-box h2 {
+  color: #5B3A82;
+  margin-bottom: 20px;
+}
+.booking-box form {
+  display: flex;
+  flex-direction: column;
+}
+.booking-box input,
+.booking-box select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.booking-box button {
+  padding: 12px;
+  background: #5B3A82;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.booking-box button:hover {
+  background: #4b3070;
+}
