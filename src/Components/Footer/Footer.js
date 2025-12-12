@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="footer-box">
         <h3>Location</h3>
         <p>Narowal, Pakistan</p>
-        <p>Islamabad, Pakistan</p>
+        {/* <p>Islamabad, Pakistan</p> */}
       </div>
 
       <div className="footer-bottom">
